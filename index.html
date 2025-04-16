@@ -12,22 +12,31 @@
     <div id="map" style="height: 100vh;"></div>
     <div id="filters"></div>
 
+    <div id="story-ui" style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.9); padding: 1em; border-radius: 8px; z-index: 1000;">
+        <h2 id="story-title">Intro</h2>
+        <p id="story-description">Click next to begin the story.</p>
+        <button onclick="prevChapter()">Previous</button>
+        <button onclick="nextChapter()">Next</button>
+      </div>
+      
+
     <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
     <script src="clean.js"></script>
 
     <script src="spread-overlapping.js"></script>
+    <script src="story.js"></script>
     <script src="map-setup.js"></script>
 
 
 
-    <script src="filter.js"></script>
+    <!-- <script src="filter.js"></script>
     <script src="slider.js"></script>
     <script src="description.js"></script>
     <script src="classification.js"></script>
 
     <script src="fuse.js"></script>
-    <script src="address-search.js"></script>
+    <script src="address-search.js"></script> -->
 </body>
 </html>
